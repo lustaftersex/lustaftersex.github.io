@@ -37,12 +37,31 @@
   </script>
    <script src="style.js"></script>
 </head>
-
 <body>
+  <div id="loading-animation">
+    <div class="particles" id="particles"></div>
+    <div class="loading-content">
+      <img class="loading-logo" src="https://i.ibb.co/XZXfJby9/image.png" alt="Logo" />
+      <div class="loading-text">DARKSTUFFF69</div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="website-load-animation" id="websiteLoadAnimation">
+    <div class="morphing-shapes">
+      <div class="morph-shape"></div>
+      <div class="morph-shape"></div>
+      <div class="morph-shape"></div>
+      <div class="morph-shape"></div>
+    </div>
+    <div class="glitch-text">DARKSTUFFF69</div>
+  </div>
+
   <div class="header" id="home">
-   
     <div class="title-container">
-      <img class="logo-img" src="/logo.jpg" alt="Logo" />
+      <img class="logo-img" src="https://i.ibb.co/XZXfJby9/image.png" alt="Logo" />
       <h1>DarkStufff69</h1>
     </div>
     <div class="search-container">
@@ -71,9 +90,9 @@
         <h3 id="modalApkName"></h3>
         <p id="modalApkDescription"></p>
         <div class="apk-modal-meta">
-          <span><i class="fas fa-download"></i> <span id="modalApkDownloads"></span> Downloads</span>
-          <span><i class="fas fa-expand-arrows-alt"></i> Size: <span id="modalApkSize"></span></span>
-          <span><i class="fas fa-calendar-alt"></i> Updated: <span id="modalApkUpdated"></span></span>
+          <span><i class="fas fa-download"></i> <span id="modalApkDownloads"></span>&nbsp;Downloads</span>
+          <span><i class="fas fa-expand-arrows-alt"></i>Size:&nbsp;<span id="modalApkSize"></span></span>
+          <span><i class="fas fa-calendar-alt"></i> Updated:&nbsp;<span id="modalApkUpdated"></span></span>
         </div>
         <button class="download-btn" id="modalDownloadBtn">
           <i class="fas fa-download"></i> Download APK
@@ -90,19 +109,7 @@
       </div>
       <div class="modal-body">
         <p>Please follow these links to unlock your download:</p>
-        <div class="follow-links">
-          <a href="https://t.me/GOGOXMPL" target="_blank" class="follow-link" id="telegram1">
-            <i class="fab fa-telegram"></i> Telegram Channel 1
-          </a>
-          <a href="https://t.me/MODSoffKisna" target="_blank" class="follow-link" id="telegram2">
-            <i class="fab fa-telegram"></i> Telegram Channel 2
-          </a>
-          <a href="https://t.me/+iwS7LvqCkYhjZjNl" target="_blank" class="follow-link" id="telegram3">
-            <i class="fab fa-telegram"></i> Telegram Channel 3
-          </a>
-          <a href="https://www.instagram.com/zgoddada" target="_blank" class="follow-link" id="instagram">
-            <i class="fab fa-instagram"></i> Instagram Page
-          </a>
+        <div class="follow-links" id="followLinksContainer">
         </div>
         <p>After following all channels, the download button will be enabled.</p>
       </div>
